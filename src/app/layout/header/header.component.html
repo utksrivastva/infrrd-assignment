@@ -1,0 +1,14 @@
+<div class="header-content-container">
+    <div>
+        <fa-icon [icon]="faBell" class="notifications-bell-icon"></fa-icon>
+        <div>
+            <fa-icon [icon]="faUsers" class="dropdown-icon"></fa-icon>
+            <select class="dropdown" [(ngModel)]="selectedValue" (ngModelChange)="filterByTeam()">
+                <option value="0" selected>Choose Team</option>
+                <option *ngFor="let item of intraOrgTeams" [value]="item.ID">
+                    {{item.title}}
+                </option>
+            </select>
+        </div>
+    </div>
+</div>

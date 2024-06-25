@@ -1,0 +1,12 @@
+<div class="employee-list-content-container">
+    <div>
+        <p>{{filteredEmployeesData.length}} Results Found</p>
+        <label for="locationFilter">
+            Show Employees in Bangalore
+            <input type="checkbox" id="locationFilter" [(ngModel)]="employeesInBLR" (ngModelChange)="filterEmployeesByLocation()"/>
+        </label>
+    </div>
+    <div>
+        <app-employee-card *ngFor="let employee of filteredEmployeesData" [data]="employee"></app-employee-card>
+    </div>
+</div>

@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-portal';
+
+  renderSearchComponent: boolean = false;
+
+  toggleSearchComponent(optionSelected: string) {
+    console.log(optionSelected);
+
+    if(optionSelected == "Search") {
+      this.renderSearchComponent = true;
+    }
+  }
+
+  closeSearchComponent(displayValue) {
+    this.renderSearchComponent = displayValue;
+  }
 }

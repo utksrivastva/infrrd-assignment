@@ -1,0 +1,44 @@
+<div class="search-content-container">
+    <div class="search-form-container">
+        <form [formGroup]="searchEmployeesForm" #searchMetricsForm="ngForm">
+            <div class="form-group-row">
+                <label class="search-form-field-label">Department</label>
+                <select class="search-form-field" formControlName="departmentID">
+                    <option value="0" selected>Choose Department</option>
+                    <option *ngFor="let item of formData.orgDepartments" [value]="item.ID">
+                        {{item.title}}
+                    </option>
+                </select>
+            </div>
+            <div class="form-group-row">
+                <label class="search-form-field-label">Year of Joining</label>
+                <select class="search-form-field" formControlName="yearOfJoining">
+                    <option value="0" selected>Choose Year</option>
+                    <option *ngFor="let item of formData.orgYearOfJoining" [value]="item.ID">
+                        {{item.value}}
+                    </option>
+                </select>
+            </div>
+            <div class="form-group-row">
+                <label class="search-form-field-label">Office Location</label>
+                <select class="search-form-field" formControlName="location">
+                    <option value="0" selected>Choose Location</option>
+                    <option *ngFor="let item of formData.orgOfficeLocations" [value]="item.ID">
+                        {{item.title}}
+                    </option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="search-form-control-container">
+        <button class="search-form-controls clear" (click)="searchEmployeesForm.reset(); clearFilters()">
+            Clear
+        </button>
+        <button class="search-form-controls" (click)="applyFilters()">
+            Submit
+        </button>
+    </div>
+    <button class="search-content-container-control" (click)="closeSearchContainer()">
+        <fa-icon [icon]="faArrowLeft"></fa-icon>
+    </button>
+</div>

@@ -1,0 +1,28 @@
+.content-projection-container {
+    position: absolute;
+    top: 65px;
+    /* left: 200px; */
+    background-color: #f9f9f9;
+    height: calc(100% - 65px);
+    /* width: calc(100% - 200px); */
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.search-component-container {
+    position: absolute;
+    top: 65px;
+    left: 200px;
+    height: calc(100% - 65px);
+    width: 200px;
+}
+
+.left-200 {
+    left: 200px;
+    width: calc(100% - 200px);
+}
+
+.left-400 {
+    left: 400px;
+    width: calc(100% - 400px);
+}

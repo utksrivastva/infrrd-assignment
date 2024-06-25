@@ -1,0 +1,27 @@
+<ul class="rating-list">
+    <ng-container *ngIf="isRatingInFraction">
+        <li *ngFor="let star of starRating; let i = index" class="rating-list-item">
+            <ng-container *ngIf="i < absoluteValueOfRating">
+                <fa-icon [icon]="faStarFilled" class="filled"></fa-icon>
+            </ng-container>
+            <ng-container *ngIf="i == absoluteValueOfRating">
+                <fa-icon [icon]="faStarHalfStroke" class="filled"></fa-icon>
+            </ng-container>
+            <ng-container *ngIf="i > absoluteValueOfRating">
+                <fa-icon [icon]="faStarUnfilled"></fa-icon>
+            </ng-container>
+        </li>
+    </ng-container>
+    <ng-container *ngIf="!isRatingInFraction">
+        <li *ngFor="let star of starRating; let i = index" class="rating-list-item" [class.filled]="i < points">
+            <ng-container *ngIf="i < points; then filledStars; else unfilledStars">
+            </ng-container>
+            <ng-template #filledStars>
+                <fa-icon [icon]="faStarFilled"></fa-icon>
+            </ng-template>
+            <ng-template #unfilledStars>
+                <fa-icon [icon]="faStarUnfilled"></fa-icon>
+            </ng-template>
+        </li>
+    </ng-container>
+</ul>

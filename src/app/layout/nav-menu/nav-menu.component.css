@@ -1,0 +1,58 @@
+.nav-menu-content-container {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    background-color: #fafafa;
+    color: #000;
+    border-right:  1px solid lightgray;;
+}
+
+.nav-menu-org-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.org-logo {
+    width: 90%;
+}
+
+.nav-menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 65px);
+    width: 100%;
+    list-style-type: none;
+    background-color: #fafafa;
+    color: #000;
+}
+
+.nav-menu-list div:nth-child(1) {
+    margin-top: 20px;
+}
+
+.nav-menu-list-item {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    width: 100%;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.nav-menu-list-item-icon {
+    color: #00c08b;
+    font-size: 18px;
+    margin: 0px 20px;
+}
+
+.nav-menu-list-item-title {
+    color: #00c08b;
+    font-size: 15px;
+    font-weight: bold;
+}

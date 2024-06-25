@@ -1,0 +1,48 @@
+<div class="card-content-container">
+    <div class="card-header-container">
+        <div>
+            <img [src]="data.profilePhotoURL" class="profile-picture" />
+        </div>
+        <div>
+            <h4>{{data.name}}</h4>
+            <h6>{{data.designation}}</h6>
+        </div>
+        <div>
+            <button (click)="toggleMessageModalVisibility()">
+                <fa-icon [icon]="faPaperPlane" class="contact-icon"></fa-icon>
+            </button>
+        </div>
+        <app-message-modal [visibility]="messageModalVisibility" (onMessageMediumSelection)="hideMessageModal()"></app-message-modal>
+    </div>
+    <div class="card-body-container">
+        <div>
+            <span>{{data.rating}} Rating</span>
+            <app-rating [points]="data.rating"></app-rating>
+        </div>
+        <hr />
+        <div>
+            <span>Experience: {{data.experience}} Years</span>
+            <span class="divider"></span>
+            <span>Date of Joining: {{data.yearOfJoining}}</span>
+        </div>
+        <hr />
+        <div>
+            <span>Current Team: {{data.currentTeam}}</span>
+        </div>
+        <hr />
+        <div>
+            <span>Reporting Manager: {{data.reportingManager}}</span>
+        </div>
+        <hr />
+    </div>
+    <div class="card-footer-container">
+        <div>
+            <fa-icon [icon]="faPhone" class="phone-icon"></fa-icon>
+            <span>{{data.phone}}</span>
+        </div>
+        <div>
+            <fa-icon [icon]="faEnvelope" class="envelope-icon"></fa-icon>
+            <span>{{data.email}}</span>
+        </div>
+    </div>
+</div>

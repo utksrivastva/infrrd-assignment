@@ -1,0 +1,19 @@
+<div class="nav-menu-content-container">
+    <div class="nav-menu-org-logo-container">
+        <img [src]="orgLogo" class="org-logo" />
+    </div>
+    <ul class="nav-menu-list">
+        <div>
+            <li *ngFor="let item of menuListOptions" class="nav-menu-list-item" (click)="selectedOption(item.title)">
+                <fa-icon [icon]="item.icon" class="nav-menu-list-item-icon"></fa-icon>
+                <span class="nav-menu-list-item-title">{{item.title}}</span>
+            </li>
+        </div>
+        <div>
+            <li *ngFor="let item of userControls" class="nav-menu-list-item" (click)="selectedOption(item.title)">
+                <fa-icon [icon]="item.icon" class="nav-menu-list-item-icon"></fa-icon>
+                <span class="nav-menu-list-item-title">{{item.title}}</span>
+            </li>
+        </div>
+    </ul>
+</div>

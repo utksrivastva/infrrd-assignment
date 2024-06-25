@@ -63,7 +63,7 @@ export class NavMenuComponent implements OnInit {
   }
 
   selectedOption(optionTitle: string) {
-    console.log(optionTitle);
+    
     this.onMenuOptionSelection.emit(optionTitle);
   }
 }

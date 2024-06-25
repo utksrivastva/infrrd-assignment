@@ -10,8 +10,9 @@ export class AppComponent {
 
   renderSearchComponent: boolean = false;
 
+  
   toggleSearchComponent(optionSelected: string) {
-    console.log(optionSelected);
+    
 
     if(optionSelected == "Search") {
       this.renderSearchComponent = true;

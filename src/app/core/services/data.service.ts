@@ -145,25 +145,6 @@ export class DataService {
     }
   ]; 
 
-  /*private teamsData: any = [
-    {
-      ID: 1,
-      title: "IDC"
-    },
-    {
-      ID: 2,
-      title: "OCBC"
-    },
-    {
-      ID: 3,
-      title: "Rustify"
-    },
-    {
-      ID: 4,
-      title: "Radian"
-    }
-  ];*/
-
   private orgMetaData: any = {
     orgTeamData: [
       {
@@ -258,31 +239,5 @@ export class DataService {
   updateSearchCriteria(criteria: any) {
     this.searchCriteriaSubject.next(criteria);
   }
-  /*getSelectedTeamValue() {
-    return this.selectedTeam;
-  }
-
-  setSelectedTeamValue(ID: number) {
-    this.selectedTeam = ID;
-    this.filterByTeam();
-  }
-
-  filterByTeam() {
-    let filterBy = this.teamsData.filter((team: any) => {
-      console.log(team);
-      if(team.ID == this.selectedTeam) {
-        return team.title;
-      }
-    });
-    console.log(filterBy);
-    let filteredEmployeesData = [];
-    this.employeeData.forEach((employee: any) => {
-      if(employee.currentTeam == filterBy[0].title) {
-        filteredEmployeesData.push(employee);
-      }
-    });
-    console.log(filteredEmployeesData); 
-  }*/
-
 
 }

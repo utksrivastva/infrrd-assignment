@@ -27,7 +27,7 @@ export class EmployeeListComponent implements OnInit {
     
     this.filterSubscription = this.dataService.filterByTeam$.subscribe(
       (selectedTeam) =>  {
-        console.log(selectedTeam);
+        
         if(selectedTeam != 0) {
           this.filterByTeam = true;
           this.filterParams['currentTeamID'] = selectedTeam;
@@ -42,15 +42,15 @@ export class EmployeeListComponent implements OnInit {
 
     this.searchCriteriaSubscription = this.dataService.searchCriteria$.subscribe(
       (searchCriteria) => {
-        console.log(searchCriteria);
+        
         if(Object.keys(searchCriteria).length > 0) {
           for(let key in searchCriteria) {
             if(this.filterParams[key] == undefined) {
-              console.log(key);
+              
               this.filterParams[key] = searchCriteria[key];
             }
           }
-          console.log(this.filterParams);
+          
           this.filterEmployees();
         }
         else {
@@ -81,7 +81,7 @@ export class EmployeeListComponent implements OnInit {
 
 
   filterEmployeesByLocation() {
-    console.log(this.employeesInBLR);
+    
     if(this.employeesInBLR) {
       this.filterParams['location'] = "Bangalore";
     }
@@ -93,10 +93,10 @@ export class EmployeeListComponent implements OnInit {
 
   filterEmployees() {
     if(Object.keys(this.filterParams).length > 0) {
-      console.log(this.filterParams);
+      
       this.filteredEmployeesData = [];
       let arrOfFiltersParams = Object.keys(this.filterParams);
-      console.log(arrOfFiltersParams);
+      
       for(let i = 0; i < this.employeeData.length; i++) {
         let valueMatchFlag = true;
         for(let j = 0; j < arrOfFiltersParams.length; j++) {
@@ -112,7 +112,7 @@ export class EmployeeListComponent implements OnInit {
     else {
       this.filteredEmployeesData = this.dataService.getEmployeeData();
     }
-    console.log(this.filteredEmployeesData);
+    
   }
 
   ngOnDestroy() {

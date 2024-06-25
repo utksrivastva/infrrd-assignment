@@ -17,6 +17,7 @@ export class SearchComponent implements OnInit {
   searchEmployeesForm: FormGroup;
   formData: any = {};
   faArrowLeft = faArrowLeft;
+  intialFormValue: any = {}
 
   constructor(private dataService: DataService, private formBuilder: FormBuilder) { 
     this.searchEmployeesForm = this.formBuilder.group({
@@ -29,7 +30,7 @@ export class SearchComponent implements OnInit {
 
   ngOnInit(): void {
     this.formData = this.dataService.getOrganizationalMetaData();
-    console.log(this.formData);
+    
   }
 
   applyFilters() {

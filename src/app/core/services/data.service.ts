@@ -9,7 +9,7 @@ export class DataService {
   private employeeData: any = [
     {
       ID: 1,
-      profilePhotoURL: "../assets/Images/Infrrd.png",
+      profilePhotoURL: "../docs/assets/Images/Infrrd.png",
       name: "Meredith Fischer",
       designation: "HR Manager",
       rating: 4.5,
@@ -26,7 +26,7 @@ export class DataService {
     },
     {
       ID: 2,
-      profilePhotoURL: "../assets/Images/Infrrd.png",
+      profilePhotoURL: "../docs/assets/Images/Infrrd.png",
       name: "Sara Kline",
       designation: "Lead Analyst",
       rating: 4,
@@ -43,7 +43,7 @@ export class DataService {
     },
     {
       ID: 3,
-      profilePhotoURL: "../assets/Images/Infrrd.png",
+      profilePhotoURL: "../docs/assets/Images/Infrrd.png",
       name: "Tessa Brennan",
       designation: "SDET",
       rating: 4,
@@ -60,7 +60,7 @@ export class DataService {
     },
     {
       ID: 4,
-      profilePhotoURL: "../assets/Images/Infrrd.png",
+      profilePhotoURL: "../docs/assets/Images/Infrrd.png",
       name: "Chris Cole",
       designation: "Lead Software Engineer",
       rating: 4,
@@ -77,7 +77,7 @@ export class DataService {
     },
     {
       ID: 5,
-      profilePhotoURL: "../assets/Images/Infrrd.png",
+      profilePhotoURL: "../docs/assets/Images/Infrrd.png",
       name: "Sanjay Verma",
       designation: "Software Engineer",
       rating: 4,
@@ -94,7 +94,7 @@ export class DataService {
     },
     {
       ID: 6,
-      profilePhotoURL: "../assets/Images/Infrrd.png",
+      profilePhotoURL: "../docs/assets/Images/Infrrd.png",
       name: "Arpit Sharma",
       designation: "Lead Software Engineer",
       rating: 5,
@@ -111,7 +111,7 @@ export class DataService {
     },
     {
       ID: 7,
-      profilePhotoURL: "../assets/Images/Infrrd.png",
+      profilePhotoURL: "../docs/assets/Images/Infrrd.png",
       name: "Deepika Garg",
       designation: "Junior SDET",
       rating: 3.5,
@@ -128,7 +128,7 @@ export class DataService {
     },
     {
       ID: 8,
-      profilePhotoURL: "../assets/Images/Infrrd.png",
+      profilePhotoURL: "../docs/assets/Images/Infrrd.png",
       name: "Anamika Sharma",
       designation: "Lead HR",
       rating: 4,

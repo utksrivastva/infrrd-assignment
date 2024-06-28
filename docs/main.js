@@ -456,7 +456,7 @@ class DataService {
         this.employeeData = [
             {
                 ID: 1,
-                profilePhotoURL: "../assets/Images/Infrrd.png",
+                profilePhotoURL: "../docs/assets/Images/Infrrd.png",
                 name: "Meredith Fischer",
                 designation: "HR Manager",
                 rating: 4.5,
@@ -473,7 +473,7 @@ class DataService {
             },
             {
                 ID: 2,
-                profilePhotoURL: "../assets/Images/Infrrd.png",
+                profilePhotoURL: "../docs/assets/Images/Infrrd.png",
                 name: "Sara Kline",
                 designation: "Lead Analyst",
                 rating: 4,
@@ -490,7 +490,7 @@ class DataService {
             },
             {
                 ID: 3,
-                profilePhotoURL: "../assets/Images/Infrrd.png",
+                profilePhotoURL: "../docs/assets/Images/Infrrd.png",
                 name: "Tessa Brennan",
                 designation: "SDET",
                 rating: 4,
@@ -507,7 +507,7 @@ class DataService {
             },
             {
                 ID: 4,
-                profilePhotoURL: "../assets/Images/Infrrd.png",
+                profilePhotoURL: "../docs/assets/Images/Infrrd.png",
                 name: "Chris Cole",
                 designation: "Lead Software Engineer",
                 rating: 4,
@@ -524,7 +524,7 @@ class DataService {
             },
             {
                 ID: 5,
-                profilePhotoURL: "../assets/Images/Infrrd.png",
+                profilePhotoURL: "../docs/assets/Images/Infrrd.png",
                 name: "Sanjay Verma",
                 designation: "Software Engineer",
                 rating: 4,
@@ -541,7 +541,7 @@ class DataService {
             },
             {
                 ID: 6,
-                profilePhotoURL: "../assets/Images/Infrrd.png",
+                profilePhotoURL: "../docs/assets/Images/Infrrd.png",
                 name: "Arpit Sharma",
                 designation: "Lead Software Engineer",
                 rating: 5,
@@ -558,7 +558,7 @@ class DataService {
             },
             {
                 ID: 7,
-                profilePhotoURL: "../assets/Images/Infrrd.png",
+                profilePhotoURL: "../docs/assets/Images/Infrrd.png",
                 name: "Deepika Garg",
                 designation: "Junior SDET",
                 rating: 3.5,
@@ -575,7 +575,7 @@ class DataService {
             },
             {
                 ID: 8,
-                profilePhotoURL: "../assets/Images/Infrrd.png",
+                profilePhotoURL: "../docs/assets/Images/Infrrd.png",
                 name: "Anamika Sharma",
                 designation: "Lead HR",
                 rating: 4,
@@ -751,7 +751,7 @@ function NavMenuComponent_li_7_Template(rf, ctx) { if (rf & 1) {
 } }
 class NavMenuComponent {
     constructor() {
-        this.orgLogo = "../assets/Images/Infrrd.png";
+        this.orgLogo = "../docs/assets/Images/Infrrd.png";
         this.menuListOptions = [
             {
                 icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1__["faList"],

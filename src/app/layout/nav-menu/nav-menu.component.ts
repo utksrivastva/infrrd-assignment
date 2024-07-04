@@ -18,7 +18,7 @@ export class NavMenuComponent implements OnInit {
 
   constructor() { }
 
-  orgLogo: string = "../docs/assets/Images/Infrrd.png"
+  orgLogo: string = "./assets/Images/Infrrd.png"
   menuListOptions: any = [
     {
       icon: faList,
